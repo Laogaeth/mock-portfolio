@@ -97,6 +97,19 @@
   transform: translateY(-100%);
   transition: all 0.5s ease-in-out;
 }
+.nav .menu-nav.open {
+  transform: translateY(0);
+}
+.nav .menu-nav__item {
+  transform: translateX(100vw);
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav__item.open {
+  transform: translateX(0);
+}
+.nav .menu-nav__item.active > a {
+  color: #ff652f;
+}
 
 body {
   background: #272727;

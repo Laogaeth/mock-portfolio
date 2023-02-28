@@ -79,6 +79,23 @@
         list-style-type: none;
         padding-right: 1rem;
         transform: translateY(-100%);
-        @include transitionEase 
+        @include transitionEase ;
+
+        &.open{
+            transform: translateY(0);
+        }
+
+        &__item{
+            transform: translateX(100vw);
+            @include transitionEase ;
+
+            &.open{
+                transform: translateX(0);
+            }
+
+            &.active > a {
+                color: $secondary-color;
+            }
+        }
     }
 }
